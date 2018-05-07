@@ -3,6 +3,7 @@ how to implement the core engine of the Blockchain in Javascript using Node.
 # Function 
 ## transactions
 It is used to transfer amount from A to B 
+
 Action: POST
 
 		{
@@ -12,7 +13,9 @@ Action: POST
 		}
 ## mine 
 It is used to put transaction into a block. 
+
 Action : GET
+
 result :
 
             {
@@ -31,7 +34,9 @@ result :
 ## blockchain
 	
 It is used to get all nodes of blockchain.
- Action : GET
+
+Action : GET
+
 Result:
 
 		{
@@ -67,6 +72,7 @@ Result:
 		}
 ## resolve
 It is used to sync Blockchian with other Blockchian
+
 Action : POST
   	
 ## /nodes/register
