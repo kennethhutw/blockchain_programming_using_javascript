@@ -93,17 +93,7 @@ app.post('/transactions', function(req, res){
 });
 
 app.get('/blockchain', function(req, res){
-    // const Block = require('./block');
-    // const Blockchian = require('./blockchain');
-    // const Transaction = require('./transaction');
 
-    // let transaction = new Transaction('May', 'Jerry',100);
-
-    // let genesisBlock = new Block();
-    // let blockchain = new Blockchian(genesisBlock);
-
-    // let block = blockchain.getNextBlock([transaction]);
-    // blockchain.addBlock(block);
 
     console.log(blockchain);
     res.json(blockchain);
@@ -113,19 +103,3 @@ app.listen(port, function(){
     console.log("port : " + port);
     console.log("server has started");
 });
-
-/*
-const Block = require('./block');
-const Blockchian = require('./blockchain');
-const Transaction = require('./transaction');
-
-let transaction = new Transaction('May', 'Jerry',100);
-
-let genesisBlock = new Block();
-let blockchain = new Blockchian(genesisBlock);
-
-let block = blockchain.getNextBlock([transaction]);
-blockchain.addBlock(block);
-
-console.log(blockchain);
-*/
